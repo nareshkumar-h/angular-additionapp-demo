@@ -1,0 +1,19 @@
+<h3>Cart</h3>
+
+
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="totalAmount">Total Amount(Rs)</label>
+    <input type="number" name="totalAmount" id="totalAmount" [(ngModel)]="totalAmount" required>
+  </div>
+  <div>
+    <label for="discountPercentage">Discount Percentage(%)</label>
+    <input type="number" name="discountPercentage" id="discountPercentage" [(ngModel)]="discountPercentage" />
+
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
+Discount Amount(Rs): {{discountAmount | currency:'INR'}}

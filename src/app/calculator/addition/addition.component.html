@@ -1,0 +1,20 @@
+<h1>Addition</h1>
+
+<form (ngSubmit)="add()">
+  <div>
+    <label for="num1">Number 1</label>
+    <input type="number" name="number1" id="number1" placeholder="Enter num1" required [(ngModel)]="number1">
+  </div>
+  <div>
+    <label for="num2">Number 2</label>
+    <input type="number" name="number2" id="number2" placeholder="Enter num2" required [(ngModel)]="number2">
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
+<div *ngIf="result">
+  <h3>Output</h3>
+  Result: {{result}}
+</div>
